@@ -6,12 +6,26 @@
     <title>Ashish Paudel</title>
 </head>
 <style>
-    .pdf{
-        width: 100%;
-        height: 860px;
-    }
+
+.pdf-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 </style>
 <body>
-    <iframe class="pdf" src="cv.pdf" frameborder="0"></iframe>
+    <div class="pdf-container">
+        <iframe src="cv.pdf" frameborder="0"></iframe>
+    </div>
 </body>
 </html>
